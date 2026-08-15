@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Colaborador</title>
+    <!-- Link do W3.CSS, usado só para deixar a página mais organizada visualmente -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-light-grey">
+
+    <div class="w3-container w3-padding-32">
+        <div class="w3-card w3-white w3-padding w3-margin" style="max-width:600px; margin:auto;">
+
+            <h2 class="w3-text-blue">Cadastro de Novos Colaboradores</h2>
+            <p>Lojas Brincos e Companhia</p>
+
+            <!-- Formulário que envia os dados via POST para o arquivo PHP -->
+            <form action="processaCadastro.php" method="POST">
+
+                <!-- Campo: nome completo -->
+                <label for="nome53"><b>Nome completo:</b></label><br>
+                <input class="w3-input w3-border w3-margin-bottom" type="text" id="nome53" name="nome53"
+                       placeholder="Digite seu nome completo" required><br>
+
+                <!-- Campo: idade -->
+                <label for="idade53"><b>Idade:</b></label><br>
+                <input class="w3-input w3-border w3-margin-bottom" type="number" id="idade53" name="idade53"
+                       placeholder="Digite sua idade" min="14" max="100" required><br>
+
+                <!-- Campo: profissão -->
+                <label for="profissao53"><b>Profissão:</b></label><br>
+                <input class="w3-input w3-border w3-margin-bottom" type="text" id="profissao53" name="profissao53"
+                       placeholder="Digite sua profissão" required><br>
+
+                <!-- Campo: salário pretendido -->
+                <label for="salario5315"><b>Salário pretendido (R$):</b></label><br>
+                <input class="w3-input w3-border w3-margin-bottom" type="number" id="salario5315" name="salario5315"
+                       placeholder="Digite o salário pretendido" step="0.01" min="0" required><br>
+
+                <!-- Campo: experiência anterior (texto longo) -->
+                <label for="experiencia15"><b>Experiência anterior:</b></label><br>
+                <textarea class="w3-input w3-border w3-margin-bottom" id="experiencia15" name="experiencia15"
+                          rows="5" cols="40" placeholder="Conte um pouco sobre sua experiência anterior" required></textarea><br>
+
+                <!-- Botão que envia o formulário -->
+                <button type="submit" class="w3-button w3-blue w3-round">Enviar Cadastro</button>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
